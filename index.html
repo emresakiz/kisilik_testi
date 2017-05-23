@@ -1,0 +1,738 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>KİŞİLİK TESTİ</title>
+
+    <!-- Bootstrap Core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/mystyle.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link href="css/1-col-portfolio.css" rel="stylesheet">
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+</head>
+
+<body>
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-default navbar-fixed-top" role="navigation" style="background-color: #fff; border-color:red;">
+        <div class="container">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="#" style="font-size:24px; margin-left:500px;">KİŞİLİK TESTİ</a>
+            </div>
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container -->
+    </nav>
+
+    <!-- Page Content -->
+    <div class="container">
+
+        <!-- Page Heading
+        <div class="row">
+            <div class="col-lg-12">
+                <h1 class="page-header"><em>SORULAR</em>
+                </h1>
+            </div>
+        </div> -->
+        <!-- /.row -->
+        <input type="hidden" id="counter" value="0" />
+        <!-- Project One -->
+        <input type="hidden" id="A" value="0" />
+        <input type="hidden" id="B" value="0"  />
+        <input type="hidden" id="C" value="0" />
+        <input type="hidden" id="D" value="0" />
+        <div class="row">
+
+
+            <div class="col-md-7">
+                <div class="questions q1">Yandaki beyitlerden hangisi sizi daha iyi anlatır?</div>
+            </div>
+            <div class="col-md-5">
+                <input type="hidden" value="0" id="question1" value="0" />
+
+
+                <div class="select checkbox1A" onmouseover="$('.checkbox1A').css('cursor', 'pointer')" onclick="selectTick('checkbox1A', 'answer1A', 1)">Güçlü, kararlı, girişken ve doğuştan liderim Düşer kalkar, yoluma devam ederim.</div>
+                <input type="checkbox"  id="checkbox1A" style="display: none;"  /> <input type="hidden" value="0"  id="answer1A" class="Ans1 A" />
+
+                <div class="select checkbox1B" onmouseover="$('.checkbox1B').css('cursor', 'pointer')" onclick="selectTick('checkbox1B', 'answer1B', 1)">Hayata anlamlı renkler katar eğlenceyi severim Ömür boyu herkesin mutlu ve neşeli olmasını dilerim.</div>
+                <input type="checkbox"  id="checkbox1B" style="display: none;" /> <input type="hidden" value="0"  id="answer1B" class="Ans1 B" />
+
+                <div class="select checkbox1C" onmouseover="$('.checkbox1C').css('cursor', 'pointer')" onclick="selectTick('checkbox1C', 'answer1C', 1)" >Her anımı huzurlu ve sakin geçirmek isterim Kavga gürültü sevmem, işlerimde en kolay yolu seçerim.</div>
+                <input type="checkbox"  id="checkbox1C" style="display: none;" /> <input type="hidden" value="0"  id="answer1C" class="Ans1 C" />
+
+                <div class="select checkbox1D" onmouseover="$('.checkbox1D').css('cursor', 'pointer')" onclick="selectTick('checkbox1D', 'answer1D', 1)" >Her şeyin mükemmel, düzgün, kusursuz olmasını isterim İlişkilerimde saygılı ve mesafeli olmayı severim.</div>
+                <input type="checkbox"  id="checkbox1D" style="display: none;" /> <input type="hidden" value="0"  id="answer1D" class="Ans1 D" />
+            </div>
+            <hr>
+
+            <div class="col-md-7">
+                <div class="questions q2">Genellikle hangi tempoda ve nasıl konuşursunuz?</div>
+            </div>
+            <div class="col-md-5">
+                <input type="hidden" value="0" id="question2" value="0" />
+
+
+                <div class="select checkbox2A" onmouseover="$('.checkbox2A').css('cursor', 'pointer')" onclick="selectTick('checkbox2A', 'answer2A', 2)">Hızlı ve sonuca yönelik.</div>
+                <input type="checkbox"  id="checkbox2A" style="display: none;" /> <input type="hidden" value="0"  id="answer2A" class="Ans2 A" />
+
+                <div class="select checkbox2B" onmouseover="$('.checkbox2B').css('cursor', 'pointer')" onclick="selectTick('checkbox2B', 'answer2B', 2)">Çok hızlı, heyecanlı ve eğlenceli.</div>
+                <input type="checkbox"  id="checkbox2B" style="display: none;" /> <input type="hidden" value="0"  id="answer2B" class="Ans2 B" />
+
+                <div class="select checkbox2C" onmouseover="$('.checkbox2C').css('cursor', 'pointer')" onclick="selectTick('checkbox2C', 'answer2C', 2)" >Daha yavaş ve sakin.</div>
+                <input type="checkbox"  id="checkbox2C" style="display: none;" /> <input type="hidden" value="0"  id="answer2C" class="Ans2 C" />
+
+                <div class="select checkbox2D" onmouseover="$('.checkbox2D').css('cursor', 'pointer')" onclick="selectTick('checkbox2D', 'answer2D', 2)" >Normal ve söyleyeceklerimi aklımda tartarak.</div>
+                <input type="checkbox"  id="checkbox2D" style="display: none;" /> <input type="hidden" value="0"  id="answer2D" class="Ans2 D" />
+            </div>
+
+
+            <div class="col-md-7">
+                <div class="questions q3">Bir işe motive olmanızı sağlayan en önemli unsur hangisidir?</div>
+            </div>
+            <div class="col-md-5">
+                <input type="hidden" value="0" id="question3" value="0" />
+
+
+                <div class="select checkbox3A" onmouseover="$('.checkbox3A').css('cursor', 'pointer')" onclick="selectTick('checkbox3A', 'answer3A', 3)">Sonuçları düşünmek.</div>
+                <input type="checkbox"  id="checkbox3A" style="display: none;" /> <input type="hidden" value="0"  id="answer3A" class="Ans3 A" />
+
+                <div class="select checkbox3B" onmouseover="$('.checkbox3B').css('cursor', 'pointer')" onclick="selectTick('checkbox3B', 'answer3B', 3)">Onaylanmak, takdir edilmek.</div>
+                <input type="checkbox"  id="checkbox3B" style="display: none;" /> <input type="hidden" value="0"  id="answer3B" class="Ans3 B" />
+
+                <div class="select checkbox3C" onmouseover="$('.checkbox3C').css('cursor', 'pointer')" onclick="selectTick('checkbox3C', 'answer3C', 3)" >Guruptaki arkadaşlarımın desteği.</div>
+                <input type="checkbox"  id="checkbox3C" style="display: none;" /> <input type="hidden" value="0"  id="answer3C" class="Ans3 C" />
+
+                <div class="select checkbox3D" onmouseover="$('.checkbox3D').css('cursor', 'pointer')" onclick="selectTick('checkbox3D', 'answer3D', 3)" >Etkinlik, düzen ve disiplin.</div>
+                <input type="checkbox"  id="checkbox3D" style="display: none;" /> <input type="hidden" value="0"  id="answer3D" class="Ans3 D" />
+            </div>
+
+
+
+            <div class="col-md-7">
+                <div class="questions q4">Çalışma tarzınız hangisine uygundur?</div>
+            </div>
+            <div class="col-md-5">
+                <input type="hidden" value="0" id="question4" value="0" />
+
+
+                <div class="select checkbox4A" onmouseover="$('.checkbox4A').css('cursor', 'pointer')" onclick="selectTick('checkbox4A', 'answer4A', 4)">Yoğun ve hızlıyımdır. Aynı anda birkaç iş bir arada yapabilirim.</div>
+                <input type="checkbox"  id="checkbox4A" style="display: none;" /> <input type="hidden" value="0"  id="answer4A" class="Ans4 A" />
+
+                <div class="select checkbox4B" onmouseover="$('.checkbox4B').css('cursor', 'pointer')" onclick="selectTick('checkbox4B', 'answer4B', 4)">Özgür bir ortamda çalışırım. İnsan ilişkileri odaklıyımdır.</div>
+                <input type="checkbox"  id="checkbox4B" style="display: none;" /> <input type="hidden" value="0"  id="answer4B" class="Ans4 B" />
+
+                <div class="select checkbox4C" onmouseover="$('.checkbox4C').css('cursor', 'pointer')" onclick="selectTick('checkbox4C', 'answer4C', 4)" >Ön planda olmayan; ama gruba her türlü desteği veren bir yapım vardır.</div>
+                <input type="checkbox"  id="checkbox4C" style="display: none;" /> <input type="hidden" value="0"  id="answer4C" class="Ans4 C" />
+
+                <div class="select checkbox4D" onmouseover="$('.checkbox4D').css('cursor', 'pointer')" onclick="selectTick('checkbox4D', 'answer4D', 4)" >Ayrıntıları önemserim ve tek bir konuya daklanarak çalışırım.</div>
+                <input type="checkbox"  id="checkbox4D" style="display: none;" /> <input type="hidden" value="0"  id="answer4D" class="Ans4 D" />
+            </div>
+
+
+            <div class="col-md-7">
+                <div class="questions q5">Çalışma temponuzu nasıl değerlendiriyorsunuz?</div>
+            </div>
+            <div class="col-md-5">
+                <input type="hidden" value="0" id="question5" value="0" />
+
+
+                <div class="select checkbox5A" onmouseover="$('.checkbox5A').css('cursor', 'pointer')" onclick="selectTick('checkbox5A', 'answer5A', 5)">Hızlı bir tempoda çalışır, çabuk karar almayı severim.</div>
+                <input type="checkbox"  id="checkbox5A" style="display: none;" /> <input type="hidden" value="0"  id="answer5A" class="Ans5 A" />
+
+                <div class="select checkbox5B" onmouseover="$('.checkbox5B').css('cursor', 'pointer')" onclick="selectTick('checkbox5B', 'answer5B', 5)">İşlerin, rutin ve sıkıcı olmadığı ortamlarda yüksek motivasyonla çalışırım.</div>
+                <input type="checkbox"  id="checkbox5B" style="display: none;" /> <input type="hidden" value="0"  id="answer5B" class="Ans5 B" />
+
+                <div class="select checkbox5C" onmouseover="$('.checkbox5C').css('cursor', 'pointer')" onclick="selectTick('checkbox5C', 'answer5C', 5)" >Nadiren aceleciyimdir. Geçde olsa üstlendiğim işi bitiririm.</div>
+                <input type="checkbox"  id="checkbox5C" style="display: none;" /> <input type="hidden" value="0"  id="answer5C" class="Ans5 C" />
+
+                <div class="select checkbox5D" onmouseover="$('.checkbox5D').css('cursor', 'pointer')" onclick="selectTick('checkbox5D', 'answer5D', 5)" >Ayrıntılı düşünerek karar veririm. İş bitirici bir tempoyla çalışırım.</div>
+                <input type="checkbox"  id="checkbox5D" style="display: none;" /> <input type="hidden" value="0"  id="answer5D" class="Ans5 D" />
+            </div>
+
+
+
+
+            <div class="col-md-7">
+                <div class="questions q6">Hangisi sizi daha çok rahatsız eder?</div>
+            </div>
+            <div class="col-md-5">
+                <input type="hidden" value="0" id="question6" value="0" />
+
+
+                <div class="select checkbox6A" onmouseover="$('.checkbox6A').css('cursor', 'pointer')" onclick="selectTick('checkbox6A', 'answer6A', 6)">Zaman israfı ve işlerin gecikmesi.</div>
+                <input type="checkbox"  id="checkbox6A" style="display: none;" /> <input type="hidden" value="0"  id="answer6A" class="Ans6 A" />
+
+                <div class="select checkbox6B" onmouseover="$('.checkbox6B').css('cursor', 'pointer')" onclick="selectTick('checkbox6B', 'answer6B', 6)">Tekrar gerektiren işler ve monotonluk.</div>
+                <input type="checkbox"  id="checkbox6B" style="display: none;" /> <input type="hidden" value="0"  id="answer6B" class="Ans6 B" />
+
+                <div class="select checkbox6C" onmouseover="$('.checkbox6C').css('cursor', 'pointer')" onclick="selectTick('checkbox6C', 'answer6C', 6)" >Çatışma ortamı ve anlaşmazlıklar.</div>
+                <input type="checkbox"  id="checkbox6C" style="display: none;" /> <input type="hidden" value="0"  id="answer6C" class="Ans6 C" />
+
+                <div class="select checkbox6D" onmouseover="$('.checkbox6D').css('cursor', 'pointer')" onclick="selectTick('checkbox6D', 'answer6D', 6)" >Yanılmak ve yapılan hatanın tekrarlanması.</div>
+                <input type="checkbox"  id="checkbox6D" style="display: none;" /> <input type="hidden" value="0"  id="answer6D" class="Ans6 D" />
+            </div>
+
+
+
+
+            <div class="col-md-7">
+                <div class="questions q7">Bulunduğunuz gruplarda hangi konumda daha başarılı olursunuz?</div>
+            </div>
+            <div class="col-md-5">
+                <input type="hidden" value="0" id="question7" value="0" />
+
+
+                <div class="select checkbox7A" onmouseover="$('.checkbox7A').css('cursor', 'pointer')" onclick="selectTick('checkbox7A', 'answer7A', 7)">Olaylara yön veren ve otoriteyi kullanan.</div>
+                <input type="checkbox"  id="checkbox7A" style="display: none;" /> <input type="hidden" value="0"  id="answer7A" class="Ans7 A" />
+
+                <div class="select checkbox7B" onmouseover="$('.checkbox7B').css('cursor', 'pointer')" onclick="selectTick('checkbox7B', 'answer7B', 7)">İnsanları motive eden ve neşelendiren.</div>
+                <input type="checkbox"  id="checkbox7B" style="display: none;" /> <input type="hidden" value="0"  id="answer7B" class="Ans7 B" />
+
+                <div class="select checkbox7C" onmouseover="$('.checkbox7C').css('cursor', 'pointer')" onclick="selectTick('checkbox7C', 'answer7C', 7)" >Uzlaştırıcı ve grup içindeki uyumu sağlayan.</div>
+                <input type="checkbox"  id="checkbox7C" style="display: none;" /> <input type="hidden" value="0"  id="answer7C" class="Ans7 C" />
+
+                <div class="select checkbox7D" onmouseover="$('.checkbox7D').css('cursor', 'pointer')" onclick="selectTick('checkbox7D', 'answer7D', 7)" >Bilgi sağlayıcı, araştırıcı ve olayları takip eden.</div>
+                <input type="checkbox"  id="checkbox7D" style="display: none;" /> <input type="hidden" value="0"  id="answer7D" class="Ans7 D" />
+            </div>
+
+
+
+            <div class="col-md-7">
+                <div class="questions q8">Hangisi sizi daha çok strese sokar?</div>
+            </div>
+            <div class="col-md-5">
+                <input type="hidden" value="0" id="question8" value="0" />
+
+
+                <div class="select checkbox8A" onmouseover="$('.checkbox8A').css('cursor', 'pointer')" onclick="selectTick('checkbox8A', 'answer8A', 8)">Olaylar üzerindeki güç ve kontrolümün azaldığını hissetmek.</div>
+                <input type="checkbox"  id="checkbox8A" style="display: none;" /> <input type="hidden" value="0"  id="answer8A" class="Ans8 A" />
+
+                <div class="select checkbox8B" onmouseover="$('.checkbox8B').css('cursor', 'pointer')" onclick="selectTick('checkbox8B', 'answer8B', 8)">Sıkıcı, rutin işler yapılan bir ortamda bulunmak.</div>
+                <input type="checkbox"  id="checkbox8B" style="display: none;" /> <input type="hidden" value="0"  id="answer8B" class="Ans8 B" />
+
+                <div class="select checkbox8C" onmouseover="$('.checkbox8C').css('cursor', 'pointer')" onclick="selectTick('checkbox8C', 'answer8C', 8)" >Beni aşacağını düşündüğüm sorumluluklar Üstlenmek.</div>
+                <input type="checkbox"  id="checkbox8C" style="display: none;" /> <input type="hidden" value="0"  id="answer8C" class="Ans8 C" />
+
+                <div class="select checkbox8D" onmouseover="$('.checkbox8D').css('cursor', 'pointer')" onclick="selectTick('checkbox8D', 'answer8D', 8)" >Düzensiz ortamlar ve eksik yapılan işler.</div>
+                <input type="checkbox"  id="checkbox8D" style="display: none;" /> <input type="hidden" value="0"  id="answer8D" class="Ans8 D" />
+            </div>
+
+
+
+            <div class="col-md-7">
+                <div class="questions q9">Bir öğrenci olsanız ve öğretmeniniz sınav kağıdınızı ikinci defa incelediğinde puanınızı artırdığını söylese, nasıl bir tepki verirsiniz?</div>
+            </div>
+            <div class="col-md-5">
+                <input type="hidden" value="0" id="question9" value="0" />
+
+
+                <div class="select checkbox9A" onmouseover="$('.checkbox9A').css('cursor', 'pointer')" onclick="selectTick('checkbox9A', 'answer9A', 9)">Bunu zaten hak ettiğimi düşünürüm.</div>
+                <input type="checkbox"  id="checkbox9A" style="display: none;" /> <input type="hidden" value="0"  id="answer9A" class="Ans9 A" />
+
+                <div class="select checkbox9B" onmouseover="$('.checkbox9B').css('cursor', 'pointer')" onclick="selectTick('checkbox9B', 'answer9B', 9)">Çok sevinirim ve sevincimi belli ederim.</div>
+                <input type="checkbox"  id="checkbox9B" style="display: none;" /> <input type="hidden" value="0"  id="answer9B" class="Ans9 B" />
+
+                <div class="select checkbox9C" onmouseover="$('.checkbox9C').css('cursor', 'pointer')" onclick="selectTick('checkbox9C', 'answer9C', 9)" >Hocama teşekkür eder ve saygı duyarım.</div>
+                <input type="checkbox"  id="checkbox9C" style="display: none;" /> <input type="hidden" value="0"  id="answer9C" class="Ans9 C" />
+
+                <div class="select checkbox9D" onmouseover="$('.checkbox9D').css('cursor', 'pointer')" onclick="selectTick('checkbox9D', 'answer9D', 9)" >Hocamın nerede hata yaptığını merak eder, kağıdımı görmek isterim.</div>
+                <input type="checkbox"  id="checkbox9D" style="display: none;" /> <input type="hidden" value="0"  id="answer9D" class="Ans9 D" />
+            </div>
+
+
+
+            <div class="col-md-7">
+                <div class="questions q10">Saatler sürecek bir iş toplantısına katılmanız gerektiğinde aşağıdakilerden hangisini benimsersiniz?</div>
+            </div>
+            <div class="col-md-5">
+                <input type="hidden" value="0" id="question10" value="0" />
+
+
+                <div class="select checkbox10A" onmouseover="$('.checkbox10A').css('cursor', 'pointer')" onclick="selectTick('checkbox10A', 'answer10A', 10)">Konunun ana hatlarının konuşulması için, sonucun belli olmasından hemen sonra çıkmayı tercih ederim.</div>
+                <input type="checkbox"  id="checkbox10A" style="display: none;" /> <input type="hidden" value="0"  id="answer10A" class="Ans10 A" />
+
+                <div class="select checkbox10B" onmouseover="$('.checkbox10B').css('cursor', 'pointer')" onclick="selectTick('checkbox10B', 'answer10B', 10)">Toplantı eğlenceli bir şekilde devam ettiğinde sonuna kadar kalmayı, sıkıcı olmaya başladığında erken çıkmayı tercih ederim.</div>
+                <input type="checkbox"  id="checkbox10B" style="display: none;" /> <input type="hidden" value="0"  id="answer10B" class="Ans10 B" />
+
+                <div class="select checkbox10C" onmouseover="$('.checkbox10C').css('cursor', 'pointer')" onclick="selectTick('checkbox10C', 'answer10C', 10)" >Toplantının huzur içinde geçmesi ve güzel kararlar çıkması için üstüme düşeni yaparım.</div>
+                <input type="checkbox"  id="checkbox10C" style="display: none;" /> <input type="hidden" value="0"  id="answer10C" class="Ans10 C" />
+
+                <div class="select checkbox10D" onmouseover="$('.checkbox10D').css('cursor', 'pointer')" onclick="selectTick('checkbox10D', 'answer10D', 10)" >Toplantıya vaktinden önce gelir, tüm detayları not eder ve bir değerlendirme yapmak için geç çıkarım.</div>
+                <input type="checkbox"  id="checkbox10D" style="display: none;" /> <input type="hidden" value="0"  id="answer10D" class="Ans10 D" />
+            </div>
+
+
+
+
+            <div class="col-md-7">
+                <div class="questions q11">Kendinizde gördüğünüz en zayıf yönünüz hangisidir?</div>
+            </div>
+            <div class="col-md-5">
+                <input type="hidden" value="0" id="question11" value="0" />
+
+
+                <div class="select checkbox11A" onmouseover="$('.checkbox11A').css('cursor', 'pointer')" onclick="selectTick('checkbox11A', 'answer11A', 11)">İnsanlar işleri istediğim gibi yapmadığında ve seri olmadıklarında sinirlenmek.</div>
+                <input type="checkbox"  id="checkbox11A" style="display: none;" /> <input type="hidden" value="0"  id="answer11A" class="Ans11 A" />
+
+                <div class="select checkbox11B" onmouseover="$('.checkbox11B').css('cursor', 'pointer')" onclick="selectTick('checkbox11B', 'answer11B', 11)">Düzensiz, dağınık ve programsız olmak.</div>
+                <input type="checkbox"  id="checkbox11B" style="display: none;" /> <input type="hidden" value="0"  id="answer11B" class="Ans11 B" />
+
+                <div class="select checkbox11C" onmouseover="$('.checkbox11C').css('cursor', 'pointer')" onclick="selectTick('checkbox11C', 'answer11C', 11)" >Kimseye hayır diyememek ve başkalarının işine koşarken kendi işimi aksatmak.</div>
+                <input type="checkbox"  id="checkbox11C" style="display: none;" /> <input type="hidden" value="0"  id="answer11C" class="Ans11 C" />
+
+                <div class="select checkbox11D" onmouseover="$('.checkbox11D').css('cursor', 'pointer')" onclick="selectTick('checkbox11D', 'answer11D', 11)" >Her şeyin kusursuz ve mükemmel olmasını istemek, İnsanlar buna uymadığında sinirlenmek.</div>
+                <input type="checkbox"  id="checkbox11D" style="display: none;" /> <input type="hidden" value="0"  id="answer11D" class="Ans11 D" />
+            </div>
+
+
+
+
+            <div class="col-md-7">
+                <div class="questions q12">Kendinizde gördüğünüz en güçlü yönünüz hangisidir?</div>
+            </div>
+            <div class="col-md-5">
+                <input type="hidden" value="0" id="question12" value="0" />
+
+
+                <div class="select checkbox12A" onmouseover="$('.checkbox12A').css('cursor', 'pointer')" onclick="selectTick('checkbox12A', 'answer12A', 12)">Kısa sürede karar alan ve harekete geçen yapım.</div>
+                <input type="checkbox"  id="checkbox12A" style="display: none;" /> <input type="hidden" value="0"  id="answer12A" class="Ans12 A" />
+
+                <div class="select checkbox12B" onmouseover="$('.checkbox12B').css('cursor', 'pointer')" onclick="selectTick('checkbox12B', 'answer12B', 12)">Girdiğim ortamlara neşe ve heyecan katan tarafım.</div>
+                <input type="checkbox"  id="checkbox12B" style="display: none;" /> <input type="hidden" value="0"  id="answer12B" class="Ans12 B" />
+
+                <div class="select checkbox12C" onmouseover="$('.checkbox12C').css('cursor', 'pointer')" onclick="selectTick('checkbox12C', 'answer12C', 12)" >Her türlü ortama uyum sağlama ve çatışmaları önleme gayretim.</div>
+                <input type="checkbox"  id="checkbox12C" style="display: none;" /> <input type="hidden" value="0"  id="answer12C" class="Ans12 C" />
+
+                <div class="select checkbox12D" onmouseover="$('.checkbox12D').css('cursor', 'pointer')" onclick="selectTick('checkbox12D', 'answer12D', 12)" >Her şeyi planlı, programlı ve düzenli yapma huyum.</div>
+                <input type="checkbox"  id="checkbox12D" style="display: none;" /> <input type="hidden" value="0"  id="answer12D" class="Ans12 D" />
+            </div>
+
+
+
+            <div class="col-md-7">
+                <div class="questions q13">Aşağıdaki ifadelerden hangisi sizi daha iyi tanımlar?</div>
+            </div>
+            <div class="col-md-5">
+                <input type="hidden" value="0" id="question13" value="0" />
+
+
+                <div class="select checkbox13A" onmouseover="$('.checkbox13A').css('cursor', 'pointer')" onclick="selectTick('checkbox13A', 'answer13A', 13)">Güçlü, kararlı, otoriter ve yönlendirici.</div>
+                <input type="checkbox"  id="checkbox13A" style="display: none;" /> <input type="hidden" value="0"  id="answer13A" class="Ans13 A" />
+
+                <div class="select checkbox13B" onmouseover="$('.checkbox13B').css('cursor', 'pointer')" onclick="selectTick('checkbox13B', 'answer13B', 13)">Popüler, neşeli, sevimli ve muzip.</div>
+                <input type="checkbox"  id="checkbox13B" style="display: none;" /> <input type="hidden" value="0"  id="answer13B" class="Ans13 B" />
+
+                <div class="select checkbox13C" onmouseover="$('.checkbox13C').css('cursor', 'pointer')" onclick="selectTick('checkbox13C', 'answer13C', 13)" >Barışçıl, sevecen, uyumlu ve sakin.</div>
+                <input type="checkbox"  id="checkbox13C" style="display: none;" /> <input type="hidden" value="0"  id="answer13C" class="Ans13 C" />
+
+                <div class="select checkbox13D" onmouseover="$('.checkbox13D').css('cursor', 'pointer')" onclick="selectTick('checkbox13D', 'answer13D', 13)" >Tertipli, düzenli, disiplinli ve planlı.</div>
+                <input type="checkbox"  id="checkbox13D" style="display: none;" /> <input type="hidden" value="0"  id="answer13D" class="Ans13 D" />
+            </div>
+
+
+
+            <div class="col-md-7">
+                <div class="questions q14">Çalışma masanızda nelere dikkat edersiniz?</div>
+            </div>
+            <div class="col-md-5">
+                <input type="hidden" value="0" id="question14" value="0" />
+
+
+                <div class="select checkbox14A" onmouseover="$('.checkbox14A').css('cursor', 'pointer')" onclick="selectTick('checkbox14A', 'answer14A', 14)">Öncelik verdiğim şeyleri yapacak şekilde düzenlenmiş sade bir masayı tercih ederim.</div>
+                <input type="checkbox"  id="checkbox14A" style="display: none;" /> <input type="hidden" value="0"  id="answer14A" class="Ans14 A" />
+
+                <div class="select checkbox14B" onmouseover="$('.checkbox14B').css('cursor', 'pointer')" onclick="selectTick('checkbox14B', 'answer14B', 14)">İnsanlara karma karışık gelen; ama benim aradığım her şeyi bulduğum bir masada çalışırım.</div>
+                <input type="checkbox"  id="checkbox14B" style="display: none;" /> <input type="hidden" value="0"  id="answer14B" class="Ans14 B" />
+
+                <div class="select checkbox14C" onmouseover="$('.checkbox14C').css('cursor', 'pointer')" onclick="selectTick('checkbox14C', 'answer14C', 14)" >Önce masamın üzerine gerekli olan her türlü araç gereci koyarım. Sık sık kalkarak enerjimi harcamak istemem.</div>
+                <input type="checkbox"  id="checkbox14C" style="display: none;" /> <input type="hidden" value="0"  id="answer14C" class="Ans14 C" />
+
+                <div class="select checkbox14D" onmouseover="$('.checkbox14D').css('cursor', 'pointer')" onclick="selectTick('checkbox14D', 'answer14D', 14)" >İyi bir iş çıkarmam için masam son derece derli-toplu ve düzenli olmalıdır.</div>
+                <input type="checkbox"  id="checkbox14D" style="display: none;" /> <input type="hidden" value="0"  id="answer14D" class="Ans14 D" />
+            </div>
+
+
+
+
+            <div class="col-md-7">
+                <div class="questions q15">Ertesi gün çözülmesi gereken bir problem varsa o akşamki ruh haliniz nasıl olur?</div>
+            </div>
+            <div class="col-md-5">
+                <input type="hidden" value="0" id="question15" value="0" />
+
+
+                <div class="select checkbox15A" onmouseover="$('.checkbox15A').css('cursor', 'pointer')" onclick="selectTick('checkbox15A', 'answer15A', 15)">Çok büyük tedirginlik duymam; çünkü ertesi gün o işi olması gerektiği gibi yapacağımdan eminimdir.</div>
+                <input type="checkbox"  id="checkbox15A" style="display: none;" /> <input type="hidden" value="0"  id="answer15A" class="Ans15 A" />
+
+                <div class="select checkbox15B" onmouseover="$('.checkbox15B').css('cursor', 'pointer')" onclick="selectTick('checkbox15B', 'answer15B', 15)">Çok tedirginlik duymam; çünkü nasıl olsa işler bir şekilde hallolacaktır.</div>
+                <input type="checkbox"  id="checkbox15B" style="display: none;" /> <input type="hidden" value="0"  id="answer15B" class="Ans15 B" />
+
+                <div class="select checkbox15C" onmouseover="$('.checkbox15C').css('cursor', 'pointer')" onclick="selectTick('checkbox15C', 'answer15C', 15)" >Sorumluluğun üstümde olmasından dolayı tedirginlik duyarım.</div>
+                <input type="checkbox"  id="checkbox15C" style="display: none;" /> <input type="hidden" value="0"  id="answer15C" class="Ans15 C" />
+
+                <div class="select checkbox15D" onmouseover="$('.checkbox15D').css('cursor', 'pointer')" onclick="selectTick('checkbox15D', 'answer15D', 15)" >Tedirginlik duyarım ve gecenin büyük bir bölümünde problemin nasıl çözüleceğiyle ilgili planlar yaparım.</div>
+                <input type="checkbox"  id="checkbox15D" style="display: none;" /> <input type="hidden" value="0"  id="answer15D" class="Ans15 D" />
+            </div>
+
+
+
+
+
+            <button type="button" id="finish" class="button" onclick="calculator()">Testi Bitir</button>
+			<button type="button" id="start" class="button" onclick="location.reload();" style="display:none;">Yeniden Başla!</button>
+        </div>
+        <!-- /.row -->
+
+        <hr>
+
+      <div id="result">
+
+          <div class="progress progress-bar progress-bar-striped active" role="progressbar"   style=" background-color: #ff3333; " id="graphicA"></div>
+          <div class="progress progress-bar progress-bar-striped active" role="progressbar"   style=" background-color: #FFB300; " id="graphicB"></div>
+          <div class="progress progress-bar progress-bar-striped active" role="progressbar"   style=" background-color: #33ff33; " id="graphicC"></div>
+          <div class="progress progress-bar progress-bar-striped active" role="progressbar"   style=" background-color: #3385ff; " id="graphicD"></div>
+
+          <div style="font-size:24px; text-align: center; display: none;" id="char">SİZE EN UYGUN KARAKTERLER</div><br>
+
+      </div>
+
+        <!-- Footer -->
+        <footer>
+            <div class="row">
+                <div class="col-lg-12">
+                    <p>Copyright &copy; EBS 2017</p>
+                </div>
+            </div>
+            <!-- /.row -->
+        </footer>
+
+    </div>
+    <!-- /.container -->
+
+    <!-- jQuery -->
+    <script src="js/jquery.js"></script>
+
+    <script src="js/ui.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="js/bootstrap.min.js"></script>
+
+    <script src="js/control.js"></script>
+
+
+
+
+    <script>
+        var red =
+            '<div class="recommend red" style="background-color:#ff3333;">' +
+
+            'Güçlü kararlı tiplerdir. <br>' +
+            'Az laf, çok iş derler. Sonuç odaklıdırlar.<br>' +
+            'Herkesin onlar gibi düşünüp hareket etmesini isterler.<br>' +
+            'Gereksiz konuşmalardan ve işlerden hoşlanmazlar.<br>' +
+            'Hep yapacak işleri ve alınmış kararları vardır.<br>' +
+            'Önemli olan onlara göre işin özünü anlamak ve<br>' +
+            'sonucu elde etmektir. Bu yüzden kararlarını uygularken gözleri başka bir şey görmez.<br>' +
+            'Yüksek; ancak gerçekçi hedefler belirlemekten ve bunları gerçekleştirmeye çalışmaktan<br>' +
+            'büyük zevk alırlar. Son derece bağımsız insanlardır.<br>' +
+            'Zaman yönetimi konusunda üstün bir becerileri vardır.<br>' +
+            'Konuşması hızlı ve tempoludur. Çalışma ortamları, ne çok dağınık ne de çok düzenlidir.<br>' +
+            'Hep dik durmaya çalışırlar, kimseden yardım istemeyi sevmezler.<br>' +
+            'Kendilerini daima haklı görme eğilimleri vardır.<br>' +
+            'Eleştiriden pek hoşlanmazlar. Kararlı ve iş bitiricidirler.<br>' +
+            'Ani kararlarıyla insanları şaşırtabilirler.<br>' +
+            'İşlerine aşırı odaklanırlar; fakat sonuçlar konusunda yeterli değerlendirmeyi yapamayabilirler.<br>' +
+            'Lider özelliklidirler. Özgüvenleri yüksektir.<br>' +'<br>' +
+
+            '<div style="font-size:24px;">TAVSİYELER</div><br>' +
+            'Hatasız kul olmayacağını kabul edin ve esnek olun.<br>' +
+            'Herkesin zayıf bir yönü olduğunu kabul edin.<br>' +
+            'Başkalarının da haklı olabileceğini kabul edin.<br>' +
+            'Konuşurken emir kipi kullanmayın.<br>' +
+            'Her şeye karışmaktan uzak durun.<br>' +
+            'Sabırlı olmayı öğrenin.<br>' +
+            'İnsanları küçümsemeyin.<br>' +
+            'Her zaman lider olamayacağınızı kabul edin.<br>' +
+
+            '</div>';
+
+        var yellow =
+            '<div class="recommend yellow" style="background-color:#FFB300; ">' +
+            'Sarı karakterli kişiler, bu 4 ana kategori içinde en hareketli karakterdir.<br>' +
+            'İlgi çekici ve karizmatik yapılıdırlar.<br>' +
+            'Dışarıdan bakılınca sevimli, kıpır kıpır, hikayeler anlatıp güldüren ve gülen birini görüyorsanız onları hemen tanırsınız.<br>' +
+            'Birebir ilişkilerde çok aktiftirler.<br>' +
+            'Yabancılarla kolaylıkla ve özel bir çaba göstermeksizin ilişki kurarlar.<br>' +
+            'Geniş bir tanıdık çevreleri vardır.<br>' +
+            'Hayaller kurmaya yatkındırlar.<br>' +
+            'Vizyonları çok geniştir.<br>' +
+            'Bir organizasyon içerisinde büyük projeler hayal edebilen, çok daha büyük ve parlak bir geleceği düşünebilen kişilerdir. Ancak bunları hayata geçirme konusunda büyük sıkıntılar yaşayabilirler.<br>' +
+            'Bu karakter grubunun genel özellikleri; girişkendirler, ayrıntılar üzerinde düşünmezler, çalışma alanları dağınıktır, onları toparlayacak birine ihtiyaç duyarlar.<br>' +
+            'Eğlenceli ve hareketlidirler, mutluluk ve enerji yayarlar, dikkatsizdirler, hazır cevaptırlar, ikna edicidirler, sorunlara ilginç çözümler bulurlar, meraklıdırlar.<br>' +'<br>' +
+
+
+            '<div style="font-size:24px;">TAVSİYELER</div><br>' +
+            'Aldığınız emanetlere dikkat edin. Aldığınız emaneti zamanında ve zarar vermeden geri verin.<br>' +
+            'Az konuşup çok dinleyin.<br>' +
+            'Asla ertelemeyin. Üşenmeyin ve vazgeçmeyin.<br>' +
+            'Karşınızdaki kişinin beden diline dikkat edin.<br>' +
+            'Çocukluktan ve saflıktan kurtulun. İçinizdeki çocuğu canlı tutun; ama  yer yerde ortaya çıkarmayın.<br>' +
+            'Daha düzenli olun.<br>' +
+            'İnsanların sözlerini kesmeyin.<br>' +
+            'Olayları fazla büyütmeyin.<br>' +
+            'Konuşmalarınızda daha net ve açıklayıcı olmaya özen gösterin.<br>' +
+
+            '</div>';
+
+        var green =
+            '<div class="recommend green" style="background-color:#33ff33;">' +
+            'Orta yollu tiplerdir.<br>' +
+            'Dikkat çekici hatalarda bulunmazlar.<br>' +
+            'En belirgin yönleri her yerde mutlu olabilmeleri ve hallerinden memnuniyet duymalarıdır.<br>' +
+            'Sabırlıdırlar.<br>' +
+            'Ayırt edilmesi en güç olan ve zor anlaşılan kişilerdir.<br>' +
+            'İçten içe çok inatçıdırlar. Projeleri yarım bırakabilirler.<br>' +
+            'Pek fazla kimseye hayır diyemezler. Barışçıl ve fedakardırlar.<br>' +
+            'En çok önemsedikleri şey çevreden saygı görmektir.<br>' +
+            'Daha duygulu ve heyecanlıdırlar.<br>' +
+            'Gruplarla uyumludurlar.<br>' +
+            'Kendilerini ön plana çıkarmaya çalışmazlar. Başka insanların katkılarındaki değeri görme konusunda oldukça yeteneklidirler.<br>' +
+            'Uyumlu ilişkilere çok değer verirler.<br>' +
+            'Başka insanların hislerine karşı duyarlıdırlar.<br>' +
+            'Çok hareketli ortamları sevmezler. İnce ve düşündürücü espiri  anlayışına sahiptirler. Kendileriyle barışıktırlar.<br>' +
+            'Çok rahattırlar. Çatışmadan çok çekinirler.<br>' +
+            'Doğal arabulucudurlar.<br>' +
+            'Çok sabırlıdırlar. İçlerinde fırtınalar koparken dışarıdan sakin görünebilirler. Kimseyi kırmak istemezler.<br><br>' +
+            '<div style="font-size:24px;">TAVSİYELER</div><br>' +
+            'Başkalarının sessizliğinizden istifade etmelerine müsaade etmeyin.<br>' +
+            'Her şeye evet derseniz “evet”in bir kıymeti kalmaz. Hayır demeyi de<br>' +
+            'öğrenin.' +
+            'En kötü kararın kararsızlık olduğunu bilin.<br>' +
+            'Duygularınızı açmayı öğrenin.<br>' +
+            'Kendi kendinizi motive etmeyi öğrenin. Motivasyonunuz için başkalarının görüşlerini beklemeyin.<br>' +
+            'Tembelliği bırakın ve işlerinizi ertelemeyin.<br>' +
+            'Sorumluluk almaya gayret gösterin.<br>' +
+            'Yeni şeyler denemeye çalışın.<br>' +
+            'Daha enerjik olmaya çalışın.<br>' +
+            '</div>';
+
+
+        var blue =
+            '<div class="recommend blue" style="background-color:#3385ff;">' +
+            'Mükemmeliyetçidirler. Duruşları, kıyafetleri ve her şeyleriyle çok düzenlidirler. Her<br>' +
+            'şeyleri uyum içinde görünür.<br>' +
+            'Kurallara çok bağlıdırlar. Çalışma ortamları tam anlamıyla mükemmel ve profesyoneldir.<br>' +
+            'Her şeyleri planlı ve programlıdır. Hassas insanlardır.<br>' +
+            'Ayrıntılar konusunda titiz davranırlar. Çoğu zaman karar vermede büyük sıkıntılar yaşarlar.<br>' +
+            'Genelde yalnızlıktan hoşlanırlar. Konuştuklarında ses tonları alçaktır. Konuşma hızları düşüktür.<br>' +
+            'Duygularını açıkça ortaya koymazlar, mantık ağırlıklıdırlar.<br>' +
+            'Heyecanları ve duyguları'+
+        'ölçülüdür.' +
+        'Bir olumsuzluk esnasında sakin ve akılcı olabilirler.<br>' +
+        'Kuralcı olduklarından kolay kolay değişmek istemezler.<br>' +
+        'Daima tedbirlidirler.<br>' +
+        'Olayların olumsuz yönlerini görüp kaygılanırlar. Detaycıdırlar. Meraklıdırlar,<br>' +
+        'araştırmacıdırlar. Riskleri önceden görürler.<br>' +
+        'Ciddi ve ağır başlıdırlar.<br>' +
+        'Standartları yüksektir.<br>' +
+        'Yeteneklidirler.<br>' +'<br>' +
+
+
+
+        '<div style="font-size:24px;">TAVSİYELER</div><br>' +
+        'İyi bir şey yaptıklarında insanları takdir edin.<br>' +
+        'İnsanlar bir şeyi sizin kadar mükemmel yapmasalar da beğeninizi gösterin.<br>' +
+        'Ayrıntıları hesaplarken bütünü kaçırmayın.<br>' +
+        'Yaptığınız işi nasıl yapacağınızı düşünürken niçin yaptığınızı da unutmayın.<br>' +
+        'Her zaman ve en iyi olmaya çalışmayın. İyi olmanız zaten yeterlidir.<br>' +
+        'Kendinize güvenin ve potansiyelinizin farkında olun.<br>' +
+        'Kendinizi fazla eleştirmeyin.<br>' +
+        'Hayatın olumlu yönlerini görmeye çalışın. Küçük şeyleri dert etmeyin.<br>' +
+
+        '</div>';
+
+    </script>
+
+
+    <script>
+        function calculator() {
+
+            var i=1;
+            var control = true;
+            for (i=1;i<=15;i++)
+            {
+                if($('#question' + i).val() == 0)
+                {
+                    $('.q' + i).css('background-color', 'red');
+                    control = false;
+                }
+                else
+                {
+                    $('.q' + i).css('background-color', '#72a7a7');
+                }
+            }
+
+            if(control == false)
+            {
+                alert("Cevapsız soru bıraktınız!");
+                return;
+            }
+			
+			
+			$('#finish').css('display', 'none');
+			$('#start').css('display', '');
+			
+			
+			
+            $(".A").each(function() {
+                var element = $(this);
+                $('#A').val(parseInt($('#A').val()) + parseInt(element.val()));
+            });
+
+
+            $(".B").each(function() {
+                var element = $(this);
+                $('#B').val(parseInt($('#B').val()) + parseInt(element.val()));
+            });
+
+            $(".C").each(function() {
+                var element = $(this);
+                $('#C').val(parseInt($('#C').val()) + parseInt(element.val()));
+            });
+
+            $(".D").each(function() {
+                var element = $(this);
+                $('#D').val(parseInt($('#D').val()) + parseInt(element.val()));
+            });
+
+
+            if(parseInt($('#A').val()) >= parseInt($('#B').val()))
+            {
+                var x = '#A';
+                var small1 = '#B';
+            }
+            else
+            {
+                var x = '#B';
+                var small1 = '#A';
+            }
+
+            if(parseInt($('#C').val()) >= parseInt($('#D').val()))
+            {
+                var y = '#C';
+                var small2 = '#D';
+            }
+            else
+            {
+                var y = '#D';
+                var small2 = '#C';
+            }
+
+            if(parseInt($(x).val()) >= parseInt($(y).val()))
+            {
+                var z = x;
+                if(parseInt($(y).val()) >=  parseInt($(small1).val()))
+                {
+                    var small = y;
+                }
+                else
+                {
+                    var small = small1;
+                }
+            }
+            else
+            {
+                var z = y;
+                if(parseInt($(x).val()) >=  parseInt($(small2).val()))
+                {
+                    var small = x;
+                }
+                else
+                {
+                    var small = small2;
+                }
+            }
+
+
+
+            $('#char').css('display', '');
+            if(z == '#A')
+            {
+                $('#result').append(red);
+            }
+            if(z == '#B')
+            {
+                $('#result').append(yellow);
+            }
+            if(z == '#C')
+            {
+                $('#result').append(green);
+            }
+            if(z == '#D')
+            {
+                $('#result').append(blue);
+            }
+
+
+            if(small == '#A')
+            {
+                $('#result').append(red);
+            }
+            if(small == '#B')
+            {
+                $('#result').append(yellow);
+            }
+            if(small == '#C')
+            {
+                $('#result').append(green);
+            }
+            if(small == '#D')
+            {
+                $('#result').append(blue);
+            }
+
+            $('#sum').val(parseInt($('#A').val()) + parseInt($('#B').val()) + parseInt($('#C').val()) + parseInt($('#D').val()));
+
+            $('#graphicA').css("width", parseInt($('#A').val()) / parseInt($('#sum').val()) * 1000)
+            $('#graphicB').css("width", parseInt($('#B').val()) / parseInt($('#sum').val()) * 1000)
+            $('#graphicC').css("width", parseInt($('#C').val()) / parseInt($('#sum').val()) * 1000)
+            $('#graphicD').css("width", parseInt($('#D').val()) / parseInt($('#sum').val()) * 1000)
+
+            $('#graphicA').html('%' + parseInt($('#A').val()) / parseInt($('#sum').val()) * 100);
+            $('#graphicB').html('%' + parseInt($('#B').val()) / parseInt($('#sum').val()) * 100);
+            $('#graphicC').html('%' + parseInt($('#C').val()) / parseInt($('#sum').val()) * 100);
+            $('#graphicD').html('%' + parseInt($('#D').val()) / parseInt($('#sum').val()) * 100);
+
+        }
+    </script>
+<input type="hidden" id="sum" value="0" />
+</body>
+
+</html>
